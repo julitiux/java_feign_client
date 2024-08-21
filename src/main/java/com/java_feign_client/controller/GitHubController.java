@@ -1,4 +1,4 @@
-package com.java_feign_client;
+package com.java_feign_client.controller;
 
 import com.java_feign_client.model.Repository;
 import com.java_feign_client.service.GitHubService;
