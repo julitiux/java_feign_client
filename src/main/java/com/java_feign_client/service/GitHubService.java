@@ -1,6 +1,6 @@
 package com.java_feign_client.service;
 
-import com.java_feign_client.GitHubClient;
+import com.java_feign_client.client.GitHubClient;
 import com.java_feign_client.model.Repository;
 import org.springframework.stereotype.Service;
 

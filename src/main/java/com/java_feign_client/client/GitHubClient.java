@@ -1,4 +1,4 @@
-package com.java_feign_client;
+package com.java_feign_client.client;
 
 import com.java_feign_client.model.Repository;
 import org.springframework.cloud.openfeign.FeignClient;
