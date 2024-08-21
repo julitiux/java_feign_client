@@ -1,4 +1,4 @@
-package com.java_feign_client;
+package com.java_feign_client.model;
 
 import lombok.Data;
 

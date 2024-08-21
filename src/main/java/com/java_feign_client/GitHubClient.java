@@ -1,5 +1,6 @@
 package com.java_feign_client;
 
+import com.java_feign_client.model.Repository;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

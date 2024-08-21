@@ -1,5 +1,6 @@
 package com.java_feign_client;
 
+import com.java_feign_client.model.Repository;
 import org.springframework.stereotype.Service;
 
 @Service

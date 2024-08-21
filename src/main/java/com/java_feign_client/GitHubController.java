@@ -1,5 +1,6 @@
 package com.java_feign_client;
 
+import com.java_feign_client.model.Repository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
