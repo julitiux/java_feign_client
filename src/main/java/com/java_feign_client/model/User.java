@@ -7,6 +7,7 @@ public class User {
 
   private String login;
   private Long id;
+  private String nodeId;
   private String avatarUrl;
   private String url;
   private String htmlUrl;
