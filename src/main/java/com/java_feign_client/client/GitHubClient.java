@@ -6,6 +6,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import java.util.List;
+
 @FeignClient(name = "githubClient", url = "https://api.github.com")
 public interface GitHubClient {
 
@@ -14,5 +16,8 @@ public interface GitHubClient {
 
   @GetMapping("/users/{username}")
   User getUser(@PathVariable("username") String username);
+
+  @GetMapping("/users/{username}/repos")
+  List<Repository> getListRepository(@PathVariable String username);
 
 }
