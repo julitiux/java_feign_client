@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @Slf4j
 @RestController
 @RequestMapping("/api")
@@ -29,6 +31,11 @@ public class GitHubController {
   @GetMapping("/users/{username}")
   public ResponseEntity<User> getUser(@PathVariable("username") String username) {
     return ResponseEntity.ok(gitHubService.getUser(username));
+  }
+
+  @GetMapping("users/{username}/repos")
+  public ResponseEntity<List<Repository>> getRepository(@PathVariable String username) {
+    return ResponseEntity.ok(gitHubService.getListRepository(username));
   }
 
 }
